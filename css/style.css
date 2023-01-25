@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -287,6 +287,8 @@ h1 {
   width: 100%;
 }
 
+
+
 /* button */
 div a {
   width: 150px;
@@ -302,11 +304,12 @@ div a {
 /* CASE STUDY PAGE */
 /* COVER PAGE in case study */
 .house {
-  background: url("../image/cs 1.JPG") center center no-repeat;
+  background: url("../image/housecover.jpg") center center no-repeat;
+  /* background-size: cover; */
 }
 
 .green {
-  background: url("../image/roof top green house cover.JPG") center center no-repeat;
+  background: url("../image/roofcover.jpg") center center no-repeat;
 }
 
 .art {
@@ -314,7 +317,7 @@ div a {
 }
 
 .plaza {
-  background: url("../image/Plaza front.JPG") center center no-repeat;
+  background: url("../image/plaza front.JPG") center center no-repeat;
 }
 
 .cover {
@@ -346,8 +349,8 @@ div a {
 }
 
 .info h1 {
-  text-decoration: underline;
-  font-size: 1.5em;
+  /* text-decoration: underline; */
+  font-size: 1.7em;
   padding-bottom: .3em;
   text-align: left;
 }
@@ -407,6 +410,10 @@ div a {
   grid-area: picture1;
 }
 
+.picture11{
+  grid-area: picture11;
+}
+
 .picture2 {
   grid-area: picture2;
 }
@@ -430,7 +437,32 @@ div a {
 .text2 {
   grid-area: text2;
 }
+/* PROCESS2 FOR WEBPAGES music ghibli */
+.process2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "title"
+    "picture1"
+    "text1"
+    "picture2"
+    "picture3 "
+    "picture4 "
+    "text2"
+    "picture5";
+  grid-gap: 2em;
+  padding: 2em;
+}
 
+.process2 img {
+  width: 100%;
+  height: auto;
+}
+
+.process2 figcaption {
+  text-align: center;
+  margin-bottom: .3em;
+}
 /* PROGESS LAYOUT 1 */
 .process1 {
   display: grid;
@@ -454,9 +486,6 @@ div a {
 }
 
 .process1 figcaption {
-  /* display: block;
-  align-items: center;
-  justify-content: center; */
   text-align: center;
 }
 
@@ -464,6 +493,7 @@ div a {
   grid-template-areas:
     "title"
     "picture1"
+    "picture11"
     "text1"
     "picture2"
     "picture4 "
@@ -493,6 +523,35 @@ div a {
   text-decoration: underline;
 }
 
+
+/* HTML WEDSITE */
+.web{
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center; */
+  display: block;
+  margin: auto;
+  text-align: center;
+  /* width: 50%; */
+}
+
+.web img{
+  width: 80%;
+}
+
+.font1 {
+ font-family: 'Poiret One', cursive;
+    }
+.font2{
+  font-family: 'Roboto', sans-serif;
+
+    }
+
+/* .roofpicture{
+  width: 60%;
+} */
 /* FOOTER */
 footer {
   background: url(../image/bg.jpg) no-repeat fixed center center;
@@ -569,13 +628,13 @@ body {
   .box {
     display: grid;
     grid-template-columns: 3fr 2fr;
-    grid-gap: 1em;
+    grid-gap: .5em;
     margin: 3em;
   }
 
   .box div {
     font-size: 1.1em;
-    border-left: 2px solid black;
+    /* border-left: 2px solid black; */
     padding-left: 1em;
   }
 
@@ -602,6 +661,21 @@ body {
     height: auto;
   }
 
+  .process2 {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas:
+      "picture1 title"
+      "picture1 text1"
+      "picture1 picture2"
+      "picture3 picture3"
+      "picture4 text2"
+      " picture4 picture6"
+      " picture5 picture5";
+    grid-gap: 2em;
+    padding: 2em;
+  }
+
   .process1 {
     display: grid;
     grid-template-columns: 2fr 2fr;
@@ -623,9 +697,9 @@ body {
     grid-template-areas:
       "picture1 title"
       "picture1 text1"
-      "picture1 text1"
-      "picture2 picture2"
-      " text2 picture4"
+      "picture11 text1"
+      "picture11 picture2"
+      " picture11 picture2"
       " picture5 picture4";
   }
 
@@ -708,7 +782,7 @@ flex-direction: row;
 
   .box div {
     font-size: 1.1em;
-    border-left: 2px solid black;
+    /* border-left: 2px solid black; */
     padding-left: 1em;
   }
 
@@ -724,13 +798,13 @@ flex-direction: row;
   }
 
   .info {
-    border-left: 5px solid black;
+    /* border-left: 5px solid black; */
   }
 
   .gallery {
     height: 40vh;
     height: auto;
-    padding: 2em;
+    /* padding: 2em; */
     background: #E9D8D0;
     display: flex;
     flex-direction: row;
@@ -758,6 +832,20 @@ flex-direction: row;
     height: auto;
   }
 
+  .process2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "picture1 title title"
+      "picture1 text1 text1"
+      "picture1 picture2 picture3"
+      "text2 text2 picture4 "
+      "picture5 picture6 picture4 "
+      "picture5 picture6 picture4 ";
+    grid-gap: 2em;
+    padding: 5em;
+  }
+
   .process1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -778,7 +866,8 @@ flex-direction: row;
     grid-template-areas:
       "picture1 title title"
       "picture1 text1 text1"
-      "picture1 picture2 picture2"
+      "picture11 text1 text1"
+      "picture11 picture2 picture2"
       " text2 picture4 picture4"
       " picture5 picture4 picture4";
   }
